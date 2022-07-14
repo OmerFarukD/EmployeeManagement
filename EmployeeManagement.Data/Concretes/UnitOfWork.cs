@@ -14,6 +14,7 @@ namespace EmployeeManagement.Data.Concretes
             _context = context;
             employeeLeaveAllocationDal = new EmployeeLeaveAllocationDal(_context);
             employeeLeaveRequestDal = new EfEmployeeLeaveRequestDal(_context);
+            employeeLeaveTypeDal = new EfEmployeeLeaveTypeDal(_context);
         }
 
         public IEmployeeLeaveAllocationDal employeeLeaveAllocationDal { get; private set; }

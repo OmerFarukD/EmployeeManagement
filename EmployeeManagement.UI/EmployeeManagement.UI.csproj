@@ -5,15 +5,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="jQuery.Maphighlight" Version="1.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.17" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.15">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.15" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\EmployeeManagement.BusinessEngine\EmployeeManagement.BusinessEngine.csproj" />
+    <ProjectReference Include="..\EmployeeManagement.Common\EmployeeManagement.Common.csproj" />
     <ProjectReference Include="..\EmployeeManagement.Data\EmployeeManagement.Data.csproj" />
   </ItemGroup>
 

@@ -23,6 +23,11 @@ namespace EmployeeManagement.BusinessEngine.Concretes
             _mapper = mapper;
         }
 
+        public IResult Add(EmployeeLeaveTypeVM employeeLeaveTypeVM)
+        {
+            throw new NotImplementedException();
+        }
+
         public IDataResult<List<EmployeeLeaveTypeVM>> GetAll()
         {
             var data = _unitOfWork.employeeLeaveTypeDal.GetAll().ToList();

@@ -23,5 +23,10 @@ namespace EmployeeManagement.UI.Controllers
             }
             return View();
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }

@@ -1,0 +1,37 @@
+﻿@model EmployeeManagement.Common.VModels.EmployeeLeaveTypeVM
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="page-header">
+    <h1>
+        Tip ekle
+        <small>
+            <i class="ace-icon fa fa-angle-double-right"></i>
+            Common form elements and layouts
+        </small>
+    </h1>
+</div>
+<form class="form-horizontal" asp-action="Create" role="form">
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" asp-for="Name"> Name </label>
+
+        <div class="col-sm-9">
+            <input asp-for="Name" type="text" id="form-field-1" placeholder="Name" class="col-xs-10 col-sm-5" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label no-padding-right" asp-for="DefaultDays"> Default Days </label>
+        <div class="col-sm-9">
+            <input asp-for="DefaultDays" type="number" id="form-field-1" placeholder="DefaultDays" class="col-xs-10 col-sm-5" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="DateCreated" class="col-sm-3 control-label no-padding-right" for="form-field-1"> Date Created</label>
+
+        <div class="col-sm-9">
+            <input asp-for="DateCreated" type="date" id="form-field-1" placeholder="Date Created" class="col-xs-10 col-sm-5" />
+        </div>
+    </div>
+</form>
+

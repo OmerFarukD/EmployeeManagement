@@ -10,6 +10,7 @@ namespace EmployeeManagement.BusinessEngine.Abstracts
   public interface IEmployeeLeaveTypeService
     {
         IDataResult<List<EmployeeLeaveTypeVM>> GetAll();
+        IResult Add(EmployeeLeaveTypeVM employeeLeaveTypeVM);
 
     }
 }
